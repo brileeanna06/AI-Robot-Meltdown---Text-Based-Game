@@ -65,7 +65,7 @@ def main():
                               "\nself-destructed, destroying your home and everything in it. Better luck next time. "
                               "Hope you enjoyed the game!")
                         break
-        if (move == 'Get item') and ('item' != 'Annie the AI Robot!'):
+        elif (move == 'Get item') and ('item' != 'Annie the AI Robot!'):
             item = rooms[currentRoom]['item']
             if item not in inventory:
                 inventory.append(rooms[currentRoom]['item'])
